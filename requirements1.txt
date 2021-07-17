@@ -1,0 +1,13 @@
+numpy>=1.16.5
+scipy>=1.3.0
+opencv-python
+gdown
+pillow==6.2.2
+gradio
+seaborn
+tensorflow-gpu==1.15
+utm
+torch torchvision torchaudio
+shapely
+scikit-learn==0.22.2
+tensorflow==1.15
