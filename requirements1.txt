@@ -10,4 +10,4 @@ utm
 torch torchvision torchaudio
 shapely
 scikit-learn==0.22.2
-tensorflow==1.15
+tensorflow-gpu==1.15
