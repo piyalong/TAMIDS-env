@@ -189,7 +189,7 @@ def projection_tracking(studyzones,video_path,reference,write_video_flag,mapping
                         trajectory_wait[class_name].update({obj_id:0})
                     trajectory_wait[class_name][obj_id]+=1
                     trajectory[class_name][obj_id].appendleft((x_bc,y_bc))
-                    traces_to_save[class_name][obj_id].append((x_bc,y_bc))
+                    traces_to_save[class_name][obj_id].append((x_bc,y_bc,frame_index))
                 trajectory_wait[class_name] = {k:v-1 for k,v in trajectory_wait[class_name].items()}
                 for k,v in trajectory_wait[class_name].items():
                     if v<0 and k in trajectory[class_name].keys():
